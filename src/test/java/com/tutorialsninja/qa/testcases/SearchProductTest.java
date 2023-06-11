@@ -1,45 +1,52 @@
 package com.tutorialsninja.qa.testcases;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
+import com.tutorialsninja.qa.pages.HomePage;
+import com.tutorialsninja.qa.pages.SearchProductPage;
 import com.tutorialsninja.qa.testBase.TestBase;
 
 public class SearchProductTest extends TestBase{
 	
 	public WebDriver driver;
 	public SoftAssert softassert = new SoftAssert();
+	public SearchProductPage searchproductpage;
+	public HomePage homepage;
 	
 	@BeforeMethod
 	public void setup() {
-		driver = initializeBrowserAndOpenApplication("chrome");
+		driver = initializeBrowserAndOpenApplication(prop.getProperty("browser"));
 	}
 	
 	@Test(priority = 1)
 	public void verifySearchWithValidProduct() {
-		driver.findElement(By.name("search")).sendKeys(testdataProp.getProperty("validProduct"));
-		driver.findElement(By.cssSelector("button.btn.btn-default.btn-lg")).click();
-		softassert.assertTrue(driver.findElement(By.linkText("HP LP3065")).isDisplayed());
+		homepage = new HomePage(driver);
+		homepage.enterProductNameInSearchbox(testdataProp.getProperty("validProduct"));
+		searchproductpage = homepage.clickOnSearchButton(); //this returns a SearchProductPage
+		
+		softassert.assertTrue(searchproductpage.validateDisplayOfValidProduct());
 		softassert.assertAll();
 	}
 	
 	@Test(priority = 2)
 	public void verifySearchWithInvalidProduct() {
-		driver.findElement(By.name("search")).sendKeys(testdataProp.getProperty("invalidProduct"));
-		driver.findElement(By.cssSelector("button.btn.btn-default.btn-lg")).click();
-		softassert.assertTrue(driver.findElement(By.xpath("//p[text() = 'There is no product that matches the search criteria.']")).isDisplayed());
+		homepage = new HomePage(driver);
+		homepage.enterProductNameInSearchbox(testdataProp.getProperty("invalidProduct"));
+		searchproductpage = homepage.clickOnSearchButton();
+		
+		softassert.assertTrue(searchproductpage.validateDisplayOfInvalidOrNoProduct());
 		softassert.assertAll();
 	}
 	
 	@Test(priority = 3)
 	public void verifySearchWithNoProduct() {
+		homepage = new HomePage(driver);
+		searchproductpage = homepage.clickOnSearchButton();
 		
-		driver.findElement(By.cssSelector("button.btn.btn-default.btn-lg")).click();
-		softassert.assertTrue(driver.findElement(By.xpath("//p[text() = 'There is no product that matches the search criteria.']")).isDisplayed());
+		softassert.assertTrue(searchproductpage.validateDisplayOfInvalidOrNoProduct());
 		softassert.assertAll();
 	}
 	

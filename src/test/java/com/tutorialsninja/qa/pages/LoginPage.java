@@ -36,8 +36,16 @@ public class LoginPage {
 		passwordTextBox.sendKeys(passwordText);
 	}
 	
-	public void clickOnLoginButton() {
-		loginButton.click();	
+	public AccountPage clickOnLoginButton() {
+		loginButton.click();
+		return new AccountPage(driver);
+	}
+	
+	public AccountPage navigateToAccountPage(String emailText, String passwordText) {
+		emailTextBox.sendKeys(emailText);
+		passwordTextBox.sendKeys(passwordText);
+		loginButton.click();
+		return new AccountPage(driver);
 	}
 	
 	public String retrieveEmailPasswordMismatch() {

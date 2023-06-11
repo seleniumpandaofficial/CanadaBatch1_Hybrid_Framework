@@ -1,6 +1,5 @@
 package com.tutorialsninja.qa.testcases;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -17,6 +16,9 @@ import com.tutorialsninja.qa.utilities.Utils;
 public class LoginTest extends TestBase {
 	public WebDriver driver;
 	public SoftAssert softassert = new SoftAssert();
+	public LoginPage loginpage;
+	public AccountPage accountpage;
+	public HomePage homepage;
 
 	public LoginTest() {
 		super();
@@ -25,19 +27,15 @@ public class LoginTest extends TestBase {
 	@BeforeMethod
 	public void setup() {
 		driver = initializeBrowserAndOpenApplication("chrome");
-		HomePage homepage = new HomePage(driver);
-		homepage.clickOnMyAccountLink();
-		homepage.selectLoginOption();
+		homepage = new HomePage(driver);
+		loginpage = homepage.navigateToLoginPage();
+	
 	}
 
 	@Test(priority = 1, dataProvider = "TN Login", dataProviderClass = ExcelData.class)
 	public void verifyLoginWithValidCredentials(String email, String password) {
-		LoginPage loginpage = new LoginPage(driver);
-		loginpage.enterEmailInEmailTextBox(email);
-		loginpage.enterPasswordInPasswordTextBox(password);
-		loginpage.clickOnLoginButton();
-
-		AccountPage accountpage = new AccountPage(driver);
+		
+		accountpage = loginpage.navigateToAccountPage(email, password);
 		softassert.assertTrue(accountpage.verifyEditAccountInfoLinkIsDisplayed());
 		softassert.assertAll();
 
@@ -45,7 +43,7 @@ public class LoginTest extends TestBase {
 
 	@Test(priority = 2)
 	public void verifyLoginWithValidEmailInvalidPassword() {
-		LoginPage loginpage = new LoginPage(driver);
+		
 		loginpage.enterEmailInEmailTextBox(prop.getProperty("validEmail"));
 		loginpage.enterPasswordInPasswordTextBox(testdataProp.getProperty("invalidPassword"));
 		loginpage.clickOnLoginButton();
@@ -58,7 +56,7 @@ public class LoginTest extends TestBase {
 
 	@Test(priority = 3)
 	public void verifyLoginWithInvalidEmailValidPassword() {
-		LoginPage loginpage = new LoginPage(driver);
+		
 		loginpage.enterEmailInEmailTextBox(Utils.emailWithDateTimeStamp());
 		loginpage.enterPasswordInPasswordTextBox(prop.getProperty("validPassword"));
 		loginpage.clickOnLoginButton();
@@ -71,7 +69,7 @@ public class LoginTest extends TestBase {
 
 	@Test(priority = 4)
 	public void verifyLoginWithInvalidCredentials() {
-		LoginPage loginpage = new LoginPage(driver);
+		
 		loginpage.enterEmailInEmailTextBox(Utils.emailWithDateTimeStamp());
 		loginpage.enterPasswordInPasswordTextBox(testdataProp.getProperty("invalidPassword"));
 		loginpage.clickOnLoginButton();
@@ -85,9 +83,8 @@ public class LoginTest extends TestBase {
 	@Test(priority = 5)
 	public void verifyLoginWithoutCredentials() {
 
-		driver.findElement(By.cssSelector("input.btn.btn-primary")).click();
-		String actualWarningMessage = driver.findElement(By.xpath("//div[contains(@class, 'alert-dismissible')]"))
-				.getText();
+		loginpage.clickOnLoginButton();
+		String actualWarningMessage = loginpage.retrieveEmailPasswordMismatch();
 		String expectedWarningMessage = testdataProp.getProperty("emailPasswordMismatch");
 		softassert.assertTrue(actualWarningMessage.contains(expectedWarningMessage));
 		softassert.assertAll();

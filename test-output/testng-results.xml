@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
+<testng-results ignored="4" total="14" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-10T20:57:08 EDT" name="Default suite" finished-at="2023-06-10T20:58:30 EDT" duration-ms="82100">
+  <suite started-at="2023-06-11T19:31:13 EDT" name="Default suite" finished-at="2023-06-11T19:32:29 EDT" duration-ms="75572">
     <groups>
     </groups>
-    <test started-at="2023-06-10T20:57:08 EDT" name="Default test" finished-at="2023-06-10T20:58:30 EDT" duration-ms="82100">
+    <test started-at="2023-06-11T19:31:13 EDT" name="Default test" finished-at="2023-06-11T19:32:29 EDT" duration-ms="75572">
       <class name="com.tutorialsninja.qa.testcases.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:57:08 EDT" name="setup" finished-at="2023-06-10T20:57:15 EDT" duration-ms="6206" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:14 EDT" name="setup" finished-at="2023-06-11T19:31:20 EDT" duration-ms="6369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:57:15 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-10T20:57:15 EDT" duration-ms="744" status="PASS">
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:20 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-11T19:31:21 EDT" duration-ms="779" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,15 +27,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:57:15 EDT" name="tearDown" finished-at="2023-06-10T20:57:15 EDT" duration-ms="76" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:21 EDT" name="tearDown" finished-at="2023-06-11T19:31:21 EDT" duration-ms="81" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:57:15 EDT" name="setup" finished-at="2023-06-10T20:57:20 EDT" duration-ms="4895" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:21 EDT" name="setup" finished-at="2023-06-11T19:31:27 EDT" duration-ms="6419" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:57:20 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-10T20:57:21 EDT" duration-ms="1010" status="PASS">
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:27 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-11T19:31:28 EDT" duration-ms="984" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,15 +51,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:57:21 EDT" name="tearDown" finished-at="2023-06-10T20:57:21 EDT" duration-ms="89" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:28 EDT" name="tearDown" finished-at="2023-06-11T19:31:28 EDT" duration-ms="64" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:57:21 EDT" name="setup" finished-at="2023-06-10T20:57:26 EDT" duration-ms="4841" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:28 EDT" name="setup" finished-at="2023-06-11T19:31:35 EDT" duration-ms="7043" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:57:26 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-10T20:57:27 EDT" duration-ms="753" status="PASS">
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:35 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-11T19:31:36 EDT" duration-ms="762" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,15 +75,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:57:27 EDT" name="tearDown" finished-at="2023-06-10T20:57:27 EDT" duration-ms="112" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:36 EDT" name="tearDown" finished-at="2023-06-11T19:31:36 EDT" duration-ms="105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:57:27 EDT" name="setup" finished-at="2023-06-10T20:57:32 EDT" duration-ms="4930" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:36 EDT" name="setup" finished-at="2023-06-11T19:31:43 EDT" duration-ms="6860" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:57:32 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-10T20:57:33 EDT" duration-ms="752" status="PASS">
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:43 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-11T19:31:44 EDT" duration-ms="753" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -99,15 +99,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:57:33 EDT" name="tearDown" finished-at="2023-06-10T20:57:33 EDT" duration-ms="115" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:44 EDT" name="tearDown" finished-at="2023-06-11T19:31:44 EDT" duration-ms="88" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:57:33 EDT" name="setup" finished-at="2023-06-10T20:57:38 EDT" duration-ms="4955" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:44 EDT" name="setup" finished-at="2023-06-11T19:31:51 EDT" duration-ms="7152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:57:38 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-10T20:57:39 EDT" duration-ms="742" status="PASS">
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:51 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-11T19:31:52 EDT" duration-ms="768" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -123,15 +123,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:57:39 EDT" name="tearDown" finished-at="2023-06-10T20:57:39 EDT" duration-ms="97" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:52 EDT" name="tearDown" finished-at="2023-06-11T19:31:52 EDT" duration-ms="60" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:57:39 EDT" name="setup" finished-at="2023-06-10T20:57:44 EDT" duration-ms="4979" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:52 EDT" name="setup" finished-at="2023-06-11T19:31:59 EDT" duration-ms="7562" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:57:44 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-10T20:57:45 EDT" duration-ms="746" status="PASS">
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:59 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-11T19:32:00 EDT" duration-ms="767" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -147,15 +147,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:57:45 EDT" name="tearDown" finished-at="2023-06-10T20:57:45 EDT" duration-ms="103" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:32:00 EDT" name="tearDown" finished-at="2023-06-11T19:32:00 EDT" duration-ms="85" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:57:45 EDT" name="setup" finished-at="2023-06-10T20:57:50 EDT" duration-ms="4934" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:32:00 EDT" name="setup" finished-at="2023-06-11T19:32:08 EDT" duration-ms="7498" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:57:50 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-10T20:57:50 EDT" duration-ms="752" status="PASS">
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:32:08 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-11T19:32:09 EDT" duration-ms="767" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -171,15 +171,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:57:50 EDT" name="tearDown" finished-at="2023-06-10T20:57:50 EDT" duration-ms="87" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:32:09 EDT" name="tearDown" finished-at="2023-06-11T19:32:09 EDT" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:57:50 EDT" name="setup" finished-at="2023-06-10T20:57:55 EDT" duration-ms="4999" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:32:09 EDT" name="setup" finished-at="2023-06-11T19:32:14 EDT" duration-ms="5034" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:57:55 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-10T20:57:56 EDT" duration-ms="775" status="PASS">
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:32:14 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-11T19:32:14 EDT" duration-ms="753" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -195,15 +195,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:57:56 EDT" name="tearDown" finished-at="2023-06-10T20:57:56 EDT" duration-ms="105" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:32:14 EDT" name="tearDown" finished-at="2023-06-11T19:32:15 EDT" duration-ms="77" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:57:56 EDT" name="setup" finished-at="2023-06-10T20:58:01 EDT" duration-ms="4987" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:32:15 EDT" name="setup" finished-at="2023-06-11T19:32:21 EDT" duration-ms="6606" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:58:01 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-10T20:58:02 EDT" duration-ms="748" status="PASS">
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:32:21 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-11T19:32:22 EDT" duration-ms="770" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -219,15 +219,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:58:02 EDT" name="tearDown" finished-at="2023-06-10T20:58:02 EDT" duration-ms="93" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:32:22 EDT" name="tearDown" finished-at="2023-06-11T19:32:22 EDT" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:58:02 EDT" name="setup" finished-at="2023-06-10T20:58:07 EDT" duration-ms="5020" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:32:22 EDT" name="setup" finished-at="2023-06-11T19:32:28 EDT" duration-ms="5908" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:58:07 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-10T20:58:08 EDT" duration-ms="740" status="PASS">
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:32:28 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-11T19:32:29 EDT" duration-ms="759" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -243,55 +243,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:58:08 EDT" name="tearDown" finished-at="2023-06-10T20:58:08 EDT" duration-ms="58" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:58:08 EDT" name="setup" finished-at="2023-06-10T20:58:13 EDT" duration-ms="5062" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithValidEmailInvalidPassword()[pri:2, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:58:13 EDT" name="verifyLoginWithValidEmailInvalidPassword" finished-at="2023-06-10T20:58:13 EDT" duration-ms="487" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidEmailInvalidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:58:13 EDT" name="tearDown" finished-at="2023-06-10T20:58:14 EDT" duration-ms="108" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:58:14 EDT" name="setup" finished-at="2023-06-10T20:58:19 EDT" duration-ms="4993" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithInvalidEmailValidPassword()[pri:3, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:58:19 EDT" name="verifyLoginWithInvalidEmailValidPassword" finished-at="2023-06-10T20:58:19 EDT" duration-ms="497" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithInvalidEmailValidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:58:19 EDT" name="tearDown" finished-at="2023-06-10T20:58:19 EDT" duration-ms="115" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:58:19 EDT" name="setup" finished-at="2023-06-10T20:58:24 EDT" duration-ms="4977" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithInvalidCredentials()[pri:4, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:58:24 EDT" name="verifyLoginWithInvalidCredentials" finished-at="2023-06-10T20:58:25 EDT" duration-ms="523" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithInvalidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:58:25 EDT" name="tearDown" finished-at="2023-06-10T20:58:25 EDT" duration-ms="89" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:58:25 EDT" name="setup" finished-at="2023-06-10T20:58:30 EDT" duration-ms="4867" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithoutCredentials()[pri:5, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:58:30 EDT" name="verifyLoginWithoutCredentials" finished-at="2023-06-10T20:58:30 EDT" duration-ms="391" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithoutCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@741a8937]" started-at="2023-06-10T20:58:30 EDT" name="tearDown" finished-at="2023-06-10T20:58:30 EDT" duration-ms="63" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:32:29 EDT" name="tearDown" finished-at="2023-06-11T19:32:29 EDT" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
