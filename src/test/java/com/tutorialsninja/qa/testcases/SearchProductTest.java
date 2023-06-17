@@ -5,6 +5,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+
+import com.tutorialsninja.qa.RetryFailedTestCases.MyRetry;
 import com.tutorialsninja.qa.pages.HomePage;
 import com.tutorialsninja.qa.pages.SearchProductPage;
 import com.tutorialsninja.qa.testBase.TestBase;
@@ -21,7 +23,7 @@ public class SearchProductTest extends TestBase{
 		driver = initializeBrowserAndOpenApplication(prop.getProperty("browser"));
 	}
 	
-	@Test(priority = 1)
+	@Test(priority = 1, retryAnalyzer = MyRetry.class)
 	public void verifySearchWithValidProduct() {
 		homepage = new HomePage(driver);
 		homepage.enterProductNameInSearchbox(testdataProp.getProperty("validProduct"));
@@ -31,17 +33,17 @@ public class SearchProductTest extends TestBase{
 		softassert.assertAll();
 	}
 	
-	@Test(priority = 2)
+	@Test(priority = 2, retryAnalyzer = MyRetry.class)
 	public void verifySearchWithInvalidProduct() {
 		homepage = new HomePage(driver);
 		homepage.enterProductNameInSearchbox(testdataProp.getProperty("invalidProduct"));
 		searchproductpage = homepage.clickOnSearchButton();
 		
-		softassert.assertTrue(searchproductpage.validateDisplayOfInvalidOrNoProduct());
+		softassert.assertFalse(searchproductpage.validateDisplayOfInvalidOrNoProduct());
 		softassert.assertAll();
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 3, retryAnalyzer = MyRetry.class, dependsOnMethods = "verifySearchWithInvalidProduct")
 	public void verifySearchWithNoProduct() {
 		homepage = new HomePage(driver);
 		searchproductpage = homepage.clickOnSearchButton();

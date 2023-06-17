@@ -1,253 +1,285 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="14" passed="10" failed="0" skipped="0">
+<testng-results retried="3" ignored="0" total="6" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-11T19:31:13 EDT" name="Default suite" finished-at="2023-06-11T19:32:29 EDT" duration-ms="75572">
+  <suite started-at="2023-06-16T20:52:07 EDT" name="SearchProductSuite" finished-at="2023-06-16T20:52:40 EDT" duration-ms="33285">
     <groups>
     </groups>
-    <test started-at="2023-06-11T19:31:13 EDT" name="Default test" finished-at="2023-06-11T19:32:29 EDT" duration-ms="75572">
-      <class name="com.tutorialsninja.qa.testcases.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:14 EDT" name="setup" finished-at="2023-06-11T19:31:20 EDT" duration-ms="6369" status="PASS">
+    <test started-at="2023-06-16T20:52:07 EDT" name="SearchProductTest" finished-at="2023-06-16T20:52:40 EDT" duration-ms="33285">
+      <class name="com.tutorialsninja.qa.testcases.SearchProductTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.SearchProductTest@2ed2d9cb]" started-at="2023-06-16T20:52:07 EDT" name="setup" finished-at="2023-06-16T20:52:14 EDT" duration-ms="7107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:20 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-11T19:31:21 EDT" duration-ms="779" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[seleniumpanda@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Selenium@123]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="verifySearchWithValidProduct()[pri:1, instance:com.tutorialsninja.qa.testcases.SearchProductTest@2ed2d9cb]" started-at="2023-06-16T20:52:14 EDT" name="verifySearchWithValidProduct" finished-at="2023-06-16T20:52:15 EDT" duration-ms="741" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:21 EDT" name="tearDown" finished-at="2023-06-11T19:31:21 EDT" duration-ms="81" status="PASS">
+        </test-method> <!-- verifySearchWithValidProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.SearchProductTest@2ed2d9cb]" started-at="2023-06-16T20:52:15 EDT" name="tearDown" finished-at="2023-06-16T20:52:15 EDT" duration-ms="82" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:21 EDT" name="setup" finished-at="2023-06-11T19:31:27 EDT" duration-ms="6419" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.SearchProductTest@2ed2d9cb]" started-at="2023-06-16T20:52:15 EDT" name="setup" finished-at="2023-06-16T20:52:21 EDT" duration-ms="6233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:27 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-11T19:31:28 EDT" duration-ms="984" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[seleniumpanda1@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Selenium@123]]>
-              </value>
-            </param>
-          </params>
+        <test-method retried="true" signature="verifySearchWithInvalidProduct()[pri:2, instance:com.tutorialsninja.qa.testcases.SearchProductTest@2ed2d9cb]" started-at="2023-06-16T20:52:21 EDT" name="verifySearchWithInvalidProduct" finished-at="2023-06-16T20:52:22 EDT" duration-ms="576" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [false] but found [true]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at com.tutorialsninja.qa.testcases.SearchProductTest.verifySearchWithInvalidProduct(SearchProductTest.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:28 EDT" name="tearDown" finished-at="2023-06-11T19:31:28 EDT" duration-ms="64" status="PASS">
+        </test-method> <!-- verifySearchWithInvalidProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.SearchProductTest@2ed2d9cb]" started-at="2023-06-16T20:52:22 EDT" name="tearDown" finished-at="2023-06-16T20:52:22 EDT" duration-ms="100" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:28 EDT" name="setup" finished-at="2023-06-11T19:31:35 EDT" duration-ms="7043" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.SearchProductTest@2ed2d9cb]" started-at="2023-06-16T20:52:22 EDT" name="setup" finished-at="2023-06-16T20:52:28 EDT" duration-ms="5715" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:35 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-11T19:31:36 EDT" duration-ms="762" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[seleniumpanda2@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Selenium@123]]>
-              </value>
-            </param>
-          </params>
+        <test-method retried="true" signature="verifySearchWithInvalidProduct()[pri:2, instance:com.tutorialsninja.qa.testcases.SearchProductTest@2ed2d9cb]" started-at="2023-06-16T20:52:28 EDT" name="verifySearchWithInvalidProduct" finished-at="2023-06-16T20:52:28 EDT" duration-ms="439" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [false] but found [true],
+expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [false] but found [true],
+expected [false] but found [true]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at com.tutorialsninja.qa.testcases.SearchProductTest.verifySearchWithInvalidProduct(SearchProductTest.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:36 EDT" name="tearDown" finished-at="2023-06-11T19:31:36 EDT" duration-ms="105" status="PASS">
+        </test-method> <!-- verifySearchWithInvalidProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.SearchProductTest@2ed2d9cb]" started-at="2023-06-16T20:52:28 EDT" name="tearDown" finished-at="2023-06-16T20:52:28 EDT" duration-ms="96" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:36 EDT" name="setup" finished-at="2023-06-11T19:31:43 EDT" duration-ms="6860" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.SearchProductTest@2ed2d9cb]" started-at="2023-06-16T20:52:28 EDT" name="setup" finished-at="2023-06-16T20:52:34 EDT" duration-ms="5456" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:43 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-11T19:31:44 EDT" duration-ms="753" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[seleniumpanda3@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Selenium@123]]>
-              </value>
-            </param>
-          </params>
+        <test-method retried="true" signature="verifySearchWithInvalidProduct()[pri:2, instance:com.tutorialsninja.qa.testcases.SearchProductTest@2ed2d9cb]" started-at="2023-06-16T20:52:34 EDT" name="verifySearchWithInvalidProduct" finished-at="2023-06-16T20:52:34 EDT" duration-ms="456" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [false] but found [true],
+expected [false] but found [true],
+expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [false] but found [true],
+expected [false] but found [true],
+expected [false] but found [true]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at com.tutorialsninja.qa.testcases.SearchProductTest.verifySearchWithInvalidProduct(SearchProductTest.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:44 EDT" name="tearDown" finished-at="2023-06-11T19:31:44 EDT" duration-ms="88" status="PASS">
+        </test-method> <!-- verifySearchWithInvalidProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.SearchProductTest@2ed2d9cb]" started-at="2023-06-16T20:52:34 EDT" name="tearDown" finished-at="2023-06-16T20:52:34 EDT" duration-ms="99" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:44 EDT" name="setup" finished-at="2023-06-11T19:31:51 EDT" duration-ms="7152" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.SearchProductTest@2ed2d9cb]" started-at="2023-06-16T20:52:34 EDT" name="setup" finished-at="2023-06-16T20:52:40 EDT" duration-ms="5258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:51 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-11T19:31:52 EDT" duration-ms="768" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[seleniumpanda4@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Selenium@123]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="verifySearchWithInvalidProduct()[pri:2, instance:com.tutorialsninja.qa.testcases.SearchProductTest@2ed2d9cb]" started-at="2023-06-16T20:52:40 EDT" name="verifySearchWithInvalidProduct" finished-at="2023-06-16T20:52:40 EDT" duration-ms="446" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [false] but found [true],
+expected [false] but found [true],
+expected [false] but found [true],
+expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [false] but found [true],
+expected [false] but found [true],
+expected [false] but found [true],
+expected [false] but found [true]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at com.tutorialsninja.qa.testcases.SearchProductTest.verifySearchWithInvalidProduct(SearchProductTest.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:52 EDT" name="tearDown" finished-at="2023-06-11T19:31:52 EDT" duration-ms="60" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:52 EDT" name="setup" finished-at="2023-06-11T19:31:59 EDT" duration-ms="7562" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:31:59 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-11T19:32:00 EDT" duration-ms="767" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[seleniumpanda5@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Selenium@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:32:00 EDT" name="tearDown" finished-at="2023-06-11T19:32:00 EDT" duration-ms="85" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:32:00 EDT" name="setup" finished-at="2023-06-11T19:32:08 EDT" duration-ms="7498" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:32:08 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-11T19:32:09 EDT" duration-ms="767" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[seleniumpanda6@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Selenium@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:32:09 EDT" name="tearDown" finished-at="2023-06-11T19:32:09 EDT" duration-ms="95" status="PASS">
+        </test-method> <!-- verifySearchWithInvalidProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.SearchProductTest@2ed2d9cb]" started-at="2023-06-16T20:52:40 EDT" name="tearDown" finished-at="2023-06-16T20:52:40 EDT" duration-ms="101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:32:09 EDT" name="setup" finished-at="2023-06-11T19:32:14 EDT" duration-ms="5034" status="PASS">
+        <test-method signature="verifySearchWithNoProduct()[pri:3, instance:com.tutorialsninja.qa.testcases.SearchProductTest@2ed2d9cb]" started-at="2023-06-16T20:52:40 EDT" name="verifySearchWithNoProduct" finished-at="2023-06-16T20:52:40 EDT" depends-on-methods="com.tutorialsninja.qa.testcases.SearchProductTest.verifySearchWithInvalidProduct" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method SearchProductTest.verifySearchWithNoProduct()[pri:3, instance:com.tutorialsninja.qa.testcases.SearchProductTest@2ed2d9cb] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method SearchProductTest.verifySearchWithNoProduct()[pri:3, instance:com.tutorialsninja.qa.testcases.SearchProductTest@2ed2d9cb] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:32:14 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-11T19:32:14 EDT" duration-ms="753" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[seleniumpanda7@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Selenium@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:32:14 EDT" name="tearDown" finished-at="2023-06-11T19:32:15 EDT" duration-ms="77" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:32:15 EDT" name="setup" finished-at="2023-06-11T19:32:21 EDT" duration-ms="6606" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:32:21 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-11T19:32:22 EDT" duration-ms="770" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[seleniumpanda8@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Selenium@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:32:22 EDT" name="tearDown" finished-at="2023-06-11T19:32:22 EDT" duration-ms="95" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:32:22 EDT" name="setup" finished-at="2023-06-11T19:32:28 EDT" duration-ms="5908" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:32:28 EDT" name="verifyLoginWithValidCredentials" data-provider="TN Login" finished-at="2023-06-11T19:32:29 EDT" duration-ms="759" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[seleniumpanda9@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Selenium@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.qa.testcases.LoginTest@e15b7e8]" started-at="2023-06-11T19:32:29 EDT" name="tearDown" finished-at="2023-06-11T19:32:29 EDT" duration-ms="80" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.tutorialsninja.qa.testcases.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- verifySearchWithNoProduct -->
+      </class> <!-- com.tutorialsninja.qa.testcases.SearchProductTest -->
+    </test> <!-- SearchProductTest -->
+  </suite> <!-- SearchProductSuite -->
 </testng-results>

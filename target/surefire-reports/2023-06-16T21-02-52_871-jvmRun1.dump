@@ -1,0 +1,16 @@
+# Created at 2023-06-16T21:02:53.442
+org.testng.TestNGException: 
+Listener qa.tutorialsninja.qa.listeners.MyListener was not found in project's classpath
+	at org.testng.TestNG.addListeners(TestNG.java:1009)
+	at org.testng.TestNG.initializeConfiguration(TestNG.java:972)
+	at org.testng.TestNG.initializeEverything(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1074)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+
